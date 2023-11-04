@@ -1,0 +1,21 @@
+import math 
+# To convert from Fahrenheit to Celsius – First you subtract 32 from the Fahrenheit value, 
+# then you multiply the remaining value with 5 and divide the result by 9
+number = input("Enter fahrenheit: ")
+fahrenheit = int(number)
+celsius = (fahrenheit - 32) * 5 / 9
+print("Celsius:", celsius)
+number = input("Enter celsius: ")
+celsius = int(number)
+fahrenheit = (celsius * 9 / 5) + 32
+print("Fahrenheit:", fahrenheit)
+
+r = float(input("Enter the radius: "))
+Circlearea = 22/7 * r**2
+print("Area:", Circlearea)
+
+import math
+T = float(input("Enter the temperature in Fahrenheit: "))
+V = float(input("Enter the wind speed in miles per hour: "))
+WC = 35.74 + 0.6215 * T - 35.75 * math.pow(V, 0.16) + 0.4275 * T * math.pow(V, 0.16)
+print("Wind Chill:", WC)
