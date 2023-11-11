@@ -1,0 +1,22 @@
+print("hello world!")
+#task2
+z=13
+x=4
+y=9
+#task4
+print(x+y)
+
+print(y-x)
+
+print(y*x)
+
+print(y/x)
+
+#task 5
+print(9**2)
+
+print(9//4)
+
+print(9%4)
+
+Joshua Joseph
