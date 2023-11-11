@@ -1,0 +1,44 @@
+#1
+print("Welcome! please enter your time in 24 hour clock format")
+hours=int(input("Enter the number of hours that has passed : "))
+minutes=int(input("Enter the number of minutes that has passed : "))
+if(hours<=12):
+  hours=hours
+
+else:
+  hours=hours-12
+print("The time is",hours,":",minutes,"in 12 hour format")
+  
+#2a
+minutes1=int(input("Enter amount of minutes : "))
+hours=(minutes1-(minutes1%60))/60
+minutes=minutes1%60
+print(minutes1,"minutes is equal to",hours,"hours and",minutes,"minutes")
+#2b
+minutes=int(input("Enter amount of minutes : "))
+hours=int(input("Enter amount of hours : "))
+hours1= (hours*60)
+total_minutes=(hours1+minutes)
+print("The total amount of minutes from",hours,"hours and", minutes,"minutes is",total_minutes)
+#3a
+print("Hello! welcome to fuel cost calculator")
+trip_distance=float(input("Please enter the trip distance in miles : "))
+number_of_gallons=float(input("Please enter the number of gallons used on the trip : "))
+milage=trip_distance/number_of_gallons
+print("The milage of the car is",milage)
+#3b
+price=float(input("Please enter the price paid in dollars per gallon of fuel : "))
+total_price=number_of_gallons*price
+print("The total cost of fuel for this trip is:", total_price)
+#4a
+change=integer(input("Enter amount to change:"))
+print("Change for $:",change)
+change2dollars=(change-(change%2))/2
+change1dollars=change%2
+print(change2dollars,"two dollar bills, and",change1dollars,"one dollar bills")
+#5
+firstbase=float(input("Please input first base of trapezoid : "))
+secondbase=float(input("Please input second base of trapezoid : "))
+height=float(input("Please input height of trapezoid : "))
+area=((firstbase+secondbase)/2)*height
+print("The area of the trapezoid is",area)
